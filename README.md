@@ -1,5 +1,8 @@
 # GMOD-Steam-ID-64-Display
-An on-screen display that shows all players in a given radius and their SID64 on screen. Used for staff on KarmaRP
+An on-screen display that shows all players in a given radius and their SID64 on screen. Also allows you you hover a players SID and copy it to your clipboard. Used for staffing on KarmaRP
+
+![image](https://user-images.githubusercontent.com/107073565/226071068-de679b24-7245-4fc8-b0f2-11e1d65dee43.png)
+
 
 ## Put this file on your server at:
 ```
