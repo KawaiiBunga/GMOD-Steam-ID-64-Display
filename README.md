@@ -2,6 +2,8 @@
 An on-screen display that shows all players in a given radius and their SID64 on screen. Also allows you you hover a players SID and copy it to your clipboard. Used for staffing on KarmaRP
 
 ![image](https://user-images.githubusercontent.com/107073565/226071068-de679b24-7245-4fc8-b0f2-11e1d65dee43.png)
+![image](https://user-images.githubusercontent.com/107073565/226072172-5f66cc64-8eff-4d8d-ad2f-bc85e4977fb2.png)
+
 
 
 ## Put this file on your server at:
