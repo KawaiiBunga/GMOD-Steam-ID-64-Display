@@ -66,16 +66,23 @@ end)
 
 hook.Add("Think", "CopySteamID64", function()
     if input.IsMouseDown(MOUSE_LEFT) then
-        local x,y = gui.MousePos()
-        if x >=50 and x <=300 then 
-            for i=1,#player.GetAll() do 
-                local v = player.GetAll()[i]
-                if y >=100+(i-1)*40 and y <=130+(i-1)*40 then
-                    local sid64 = v:SteamID64()
-                    SetClipboardText(sid64 or 'nil')
-                    break
+        if not buttonPressed then
+            local x,y = gui.MousePos()
+            if x >=50 and x <=300 then 
+                for i=1,#player.GetAll() do 
+                    local v = player.GetAll()[i]
+                    if y >=100+(i-1)*40 and y <=130+(i-1)*40 then
+                        local sid64 = v:SteamID64()
+                        SetClipboardText(sid64 or 'nil')
+                        notification.AddLegacy("SID64 Copied!", NOTIFY_GENERIC, 5)
+                        surface.PlaySound("buttons/button15.wav")
+                        buttonPressed = true
+                        break
+                    end
                 end
             end
         end
+    else
+        buttonPressed = false
     end
 end)
