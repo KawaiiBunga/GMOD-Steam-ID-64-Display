@@ -64,6 +64,8 @@ hook.Add("HUDPaint", "ShowSteamID64", function()
     end
 end)
 
+local buttonPressed = false
+
 hook.Add("Think", "CopySteamID64", function()
     if input.IsMouseDown(MOUSE_LEFT) then
         if not buttonPressed then
